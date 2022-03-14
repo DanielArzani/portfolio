@@ -8,17 +8,15 @@ const theme = createTheme({
   palette: {
     common: {
       blue: `${colors.niceBlue}`,
+      gray: `#444`,
     },
     primary: {
       main: `${colors.niceBlue}`,
     },
-    secondary: {
-      main: `#444`,
-    },
   },
   typography: {},
-  // [Header/Footer]
-  spacing: [48],
+  // [Header/Footer,,,]
+  spacing: [48, 0, 0, 0],
 });
 
 export default theme;

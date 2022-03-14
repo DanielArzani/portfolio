@@ -40,6 +40,7 @@ function Header() {
     },
     toolbarMargin: {
       ...theme.mixins.toolbar,
+      // marginBottom: "5rem",
     },
     headerTitleStyles: {
       color: theme.palette.primary,
@@ -65,7 +66,7 @@ function Header() {
 
   return (
     <>
-      <AppBar className={classes.appBar} color="transparent">
+      <AppBar position="sticky" className={classes.appBar} color="transparent">
         <Toolbar className={classes.toolbar} disableGutters>
           <Button
             disableRipple
