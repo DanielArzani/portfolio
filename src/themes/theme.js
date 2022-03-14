@@ -12,8 +12,13 @@ const theme = createTheme({
     primary: {
       main: `${colors.niceBlue}`,
     },
+    secondary: {
+      main: `#444`,
+    },
   },
   typography: {},
+  // [Header/Footer]
+  spacing: [48],
 });
 
 export default theme;

@@ -31,9 +31,12 @@ function Header() {
     appBar: {
       "&.MuiAppBar-root": {
         boxShadow: "none",
-        padding: "3rem",
+        padding: theme.spacing(0),
         borderBottom: `1px solid ${theme.palette.common.blue}`,
       },
+    },
+    toolbar: {
+      flexWrap: "wrap",
     },
     toolbarMargin: {
       ...theme.mixins.toolbar,
@@ -63,7 +66,7 @@ function Header() {
   return (
     <>
       <AppBar className={classes.appBar} color="transparent">
-        <Toolbar disableGutters>
+        <Toolbar className={classes.toolbar} disableGutters>
           <Button
             disableRipple
             variant="text"
@@ -100,6 +103,8 @@ function Header() {
           </Tabs>
         </Toolbar>
       </AppBar>
+      {/* An invisible cushion for the AppBar so content doesn't end up inside of it */}
+      <div className={classes.toolbarMargin} />
     </>
   );
 }
