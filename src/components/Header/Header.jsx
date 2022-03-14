@@ -7,6 +7,7 @@ import {
   Folder,
 } from "@mui/icons-material";
 import { makeStyles } from "@mui/styles";
+import { Link } from "react-router-dom";
 
 function Header() {
   /**-------------------------
@@ -85,21 +86,29 @@ function Header() {
               className={classes.tab}
               icon={<AccountCircle style={{ fontSize: "2.2rem" }} />}
               label="About Me"
+              component={Link}
+              to="/"
             ></Tab>
             <Tab
               className={classes.tab}
               icon={<Folder style={{ fontSize: "2.2rem" }} />}
               label="Portfolio"
+              component={Link}
+              to="/projects"
             ></Tab>
             <Tab
               className={classes.tab}
               icon={<Article style={{ fontSize: "2.2rem" }} />}
               label="Resume"
+              component={Link}
+              to="/resume"
             ></Tab>
             <Tab
               className={classes.tab}
               icon={<ContactMail style={{ fontSize: "2.2rem" }} />}
               label="Contact"
+              component={Link}
+              to="/contact"
             ></Tab>
           </Tabs>
         </Toolbar>
