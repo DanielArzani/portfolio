@@ -21,9 +21,9 @@ function Footer() {
       gap: ".5rem",
       borderTop: `1px solid ${theme.palette.common.blue}`,
       padding: theme.spacing(1),
-      position: "absolute",
-      bottom: 0,
-      //   left: "50%",
+      // position: "absolute",
+      // bottom: 0,
+      marginTop: "8rem",
       width: "100%",
     },
     footerIcons: {

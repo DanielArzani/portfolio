@@ -17,6 +17,11 @@ const theme = createTheme({
   typography: {},
   // [0,Header/Footer,,]
   spacing: [0, 48, 0, 0],
+  breakpoints: {
+    values: {
+      aboutPage: 1045,
+    },
+  },
 });
 
 export default theme;

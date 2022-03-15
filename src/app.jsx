@@ -34,7 +34,7 @@ function App() {
           {/* prettier-ignore */}
           <Route path="*" element={<About/>}></Route>
         </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   );

@@ -4,6 +4,7 @@ import {
   CardContent,
   CardMedia,
   Container,
+  useMediaQuery,
   useTheme,
   Typography,
 } from "@mui/material";
@@ -18,32 +19,54 @@ function About() {
     return intro;
   }
   /**-------------------------
+   **        Hooks
+   *------------------------**/
+  const matches = useMediaQuery("max-width: 1040px");
+  /**-------------------------
    **        STYLES
    *------------------------**/
-  //   const theme = useTheme();
   const useStyles = makeStyles((theme) => ({
+    container: {
+      "&.MuiContainer-root": {
+        width: "1000px",
+        [theme.breakpoints.down("aboutPage")]: {
+          width: "100%",
+        },
+      },
+    },
     card: {
       display: "flex",
-      maxHeight: "30rem",
+      alignItems: "flex-start",
+      maxHeight: "60rem",
+      // maxWidth: "1400px",
+      [theme.breakpoints.down("aboutPage")]: {
+        flexDirection: "column-reverse",
+      },
     },
     cardContent: {
       "&.MuiTypography-h5": {
+        fontSize: "1.8rem",
         fontWeight: 500,
       },
 
       "&.MuiTypography-subtitle1": {
         color: theme.palette.common.gray,
+        fontSize: "1.5rem",
+        lineHeight: "1.4",
       },
     },
 
     cardMedia: {
       borderRadius: "20px",
+      [theme.breakpoints.down("aboutPage")]: {
+        height: "300px",
+      },
     },
   }));
   const classes = useStyles();
   return (
     <>
-      <Container maxWidth="md">
+      <Container maxWidth="md" className={classes.container}>
         <Card className={classes.card}>
           <CardContent className={classes.cardContent}>
             <Typography
@@ -56,7 +79,7 @@ function About() {
             </Typography>
             <Typography
               variant="subtitle1"
-              component="p"
+              paragraph
               className={classes.cardContent}
             >
               {lorem()}
@@ -66,16 +89,10 @@ function About() {
             className={classes.cardMedia}
             component="img"
             alt="Daniel Arzanipour"
-            height="300"
+            height="400"
             image={require("../../assets/photos/Daniel.jpg")}
           ></CardMedia>
         </Card>
-        {/* <h3>Hi, I'm Daniel, a FullStack Developer</h3>
-        <p>{lorem()}</p>
-        <img
-          src={require("../../assets/photos/Daniel.jpg")}
-          alt="Daniel Arzanipour"
-        /> */}
       </Container>
     </>
   );
