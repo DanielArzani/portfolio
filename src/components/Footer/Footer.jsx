@@ -20,7 +20,7 @@ function Footer() {
       display: "flex",
       gap: ".5rem",
       borderTop: `1px solid ${theme.palette.common.blue}`,
-      padding: theme.spacing(0),
+      padding: theme.spacing(1),
       position: "absolute",
       bottom: 0,
       //   left: "50%",

@@ -1,0 +1,193 @@
+.section--projects {
+  /* padding: 5rem 0; */
+}
+
+.section--projects__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+  /* margin-top: 10rem; */
+}
+
+.section--projects__gallery--gallery-link {
+  margin: 4rem 1rem;
+  position: relative;
+}
+
+/* This is the horizontal line */
+.section--projects__gallery--gallery-link::before {
+  background-color: #444;
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 2vw;
+  left: 85%;
+  transition: height 0.5s;
+  width: 0.2rem;
+}
+
+.section--projects__gallery--gallery-link:hover::before {
+  height: 80%;
+  /* Fix ~ vertical line ends up behind image */
+  z-index: 10;
+}
+
+/* This is the vertical line */
+.section--projects__gallery--gallery-link::after {
+  background-color: #444;
+  content: "";
+  height: 0.2rem;
+  position: absolute;
+  top: 30%;
+  left: 2rem;
+  transition: width 0.5s;
+  width: 0;
+}
+
+.section--projects__gallery--gallery-link:hover::after {
+  width: 90%;
+}
+
+.section--projects__gallery--project-img {
+  box-shadow: 0.3rem 0.3rem 0.1rem #e92929, 0.5rem 0.5rem 0.1rem #a2e946,
+    0.7rem 0.7rem 0.1rem #297ce9, 0.9rem 0.9rem 0.1rem #e92999;
+  /* Allows us to maintain quality of image (it won't stretch */
+  object-fit: cover;
+  height: 15vw;
+  transition: all 0.5s;
+  width: 24vw;
+}
+
+.section--projects__gallery--gallery-link:hover
+  .section--projects__gallery--project-img {
+  box-shadow: 1rem 1rem 0.1rem #e92929, 2rem 2rem 0.1rem #a2e946,
+    3rem 3rem 0.1rem #297ce9, 4rem 4rem 0.1rem #e92999;
+  filter: blur(0.5rem);
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+.section--projects__gallery--project-name {
+  color: #444;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  top: 0.9rem;
+  left: 3rem;
+  text-transform: uppercase;
+  /* So text doesn't just disappear, but transitions away */
+  transition: width 0.3s;
+
+  /* To make hidden */
+  width: 0;
+  overflow: hidden;
+}
+
+.section--projects__gallery--gallery-link:hover
+  .section--projects__gallery--project-name {
+  transition: width 1.5s 0.5s;
+  width: 100%;
+}
+
+.section--projects__gallery--project-description {
+  color: #444;
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 2rem;
+  text-transform: uppercase;
+  /* So text doesn't just disappear, but transitions away */
+  transition: opacity 2s;
+  width: 70%;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.section--projects__gallery--gallery-link:hover
+  .section--projects__gallery--project-description {
+  opacity: 1;
+  visibility: visible;
+  transform: opacity 2s 2s;
+}
+
+/*-------------------------
+   *     MEDIA QUERIES
+   *------------------------*/
+@media (max-width: 1830px) {
+  .section--projects__gallery--project-name {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1660px) {
+  .section--projects__gallery--project-name {
+    font-size: 1.6rem;
+  }
+  .section--projects__gallery--project-description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1534px) {
+  .section--projects__gallery--project-name {
+    font-size: 1.4rem;
+  }
+  .section--projects__gallery--project-description {
+    bottom: 2rem;
+  }
+}
+
+@media (max-width: 1490px) {
+  .section--projects__gallery--project-description {
+    font-size: 0.8rem;
+    bottom: 3rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .section--projects__gallery--gallery-link {
+    width: 40rem;
+    height: 25rem;
+    margin: 5rem;
+  }
+
+  .section--projects__gallery--project-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .section--projects__gallery--project-name {
+    font-size: 3rem;
+  }
+
+  .section--projects__gallery--project-description {
+    font-size: 1.5rem;
+    bottom: 6rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .section--projects__gallery--project-name {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .section--projects__gallery--project-name {
+    font-size: 1.6rem;
+    margin: 4.5rem 0;
+  }
+  .section--projects__gallery--project-description {
+    font-size: 1.3rem;
+    bottom: 3rem;
+  }
+}
+
+@media (max-width: 550px) {
+}

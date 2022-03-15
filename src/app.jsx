@@ -5,7 +5,12 @@ import { BrowserRouter, Route, Routes as Switch } from "react-router-dom";
 import "./styles/app.css";
 import theme from "./themes/theme.js";
 
-import { Header, Footer, About } from "./components/component-index.js";
+import {
+  Header,
+  Footer,
+  About,
+  Projects,
+} from "./components/component-index.js";
 
 function App() {
   function TestDiv2(props) {
@@ -20,13 +25,13 @@ function App() {
           {/* prettier-ignore */}
           <Route exact path="/" element={<About/>}></Route>
           {/* prettier-ignore */}
-          <Route exact path="/projects" element={<TestDiv2 text="Projects" />}></Route>
+          <Route exact path="/projects" element={<Projects/>}></Route>
           {/* prettier-ignore */}
           <Route exact path="/resume" element={<TestDiv2 text="Resume" />}></Route>
           {/* prettier-ignore */}
           <Route exact path="/contact" element={<TestDiv2 text="Contact" />}></Route>
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </ThemeProvider>
   );

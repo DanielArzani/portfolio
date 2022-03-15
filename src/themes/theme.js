@@ -15,8 +15,8 @@ const theme = createTheme({
     },
   },
   typography: {},
-  // [Header/Footer,,,]
-  spacing: [48, 0, 0, 0],
+  // [0,Header/Footer,,]
+  spacing: [0, 48, 0, 0],
 });
 
 export default theme;

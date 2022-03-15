@@ -32,7 +32,7 @@ function Header() {
     appBar: {
       "&.MuiAppBar-root": {
         boxShadow: "none",
-        padding: theme.spacing(0),
+        padding: theme.spacing(1),
         borderBottom: `1px solid ${theme.palette.common.blue}`,
       },
     },
@@ -67,7 +67,7 @@ function Header() {
 
   return (
     <>
-      <AppBar position="sticky" className={classes.appBar} color="transparent">
+      <AppBar position="static" className={classes.appBar} color="transparent">
         <Toolbar className={classes.toolbar} disableGutters>
           <Button
             disableRipple
