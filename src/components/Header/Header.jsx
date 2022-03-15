@@ -87,10 +87,14 @@ function Header() {
             Daniel Arzanipour
           </Button>
           <Tabs
+            scrollButtons="true"
+            allowScrollButtonsMobile="true"
+            variant="scrollable"
+            visibleScrollbar
             className={classes.tabContainer}
             value={value}
             onChange={handleChange}
-            aria-label="portfolio tabs"
+            aria-label="scrollable portfolio tabs"
           >
             <Tab
               className={classes.tab}
