@@ -25,6 +25,16 @@ function Header() {
   };
 
   /**-------------------------
+   **        HOOKS
+   *------------------------**/
+  React.useEffect(() => {
+    window.location.pathname === "/" && setValue(0);
+    window.location.pathname === "/projects" && setValue(1);
+    window.location.pathname === "/resume" && setValue(2);
+    window.location.pathname === "/contact" && setValue(3);
+  }, [value]);
+
+  /**-------------------------
    **        STYLES
    *------------------------**/
   const theme = useTheme();

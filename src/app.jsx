@@ -23,13 +23,16 @@ function App() {
         <Header />
         <Switch>
           {/* prettier-ignore */}
-          <Route exact path="/" element={<About/>}></Route>
+          <Route path="/" element={<About/>}></Route>
           {/* prettier-ignore */}
-          <Route exact path="/projects" element={<Projects/>}></Route>
+          <Route path="/projects" element={<Projects/>}></Route>
           {/* prettier-ignore */}
-          <Route exact path="/resume" element={<TestDiv2 text="Resume" />}></Route>
+          <Route path="/resume" element={<TestDiv2 text="Resume" />}></Route>
           {/* prettier-ignore */}
-          <Route exact path="/contact" element={<TestDiv2 text="Contact" />}></Route>
+          <Route path="/contact" element={<TestDiv2 text="Contact" />}></Route>
+          {/* Default */}
+          {/* prettier-ignore */}
+          <Route path="*" element={<About/>}></Route>
         </Switch>
         {/* <Footer /> */}
       </BrowserRouter>
