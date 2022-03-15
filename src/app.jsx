@@ -10,6 +10,7 @@ import {
   Footer,
   About,
   Projects,
+  Contact,
 } from "./components/component-index.js";
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
           {/* prettier-ignore */}
           <Route path="/resume" element={<TestDiv2 text="Resume" />}></Route>
           {/* prettier-ignore */}
-          <Route path="/contact" element={<TestDiv2 text="Contact" />}></Route>
+          <Route path="/contact" element={<Contact/>}></Route>
           {/* Default */}
           {/* prettier-ignore */}
           <Route path="*" element={<About/>}></Route>
