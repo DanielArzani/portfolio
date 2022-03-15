@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.1ebf2932.css",
+    "main.js": "/portfolio/static/js/main.a61b690d.js",
+    "static/media/Daniel.jpg": "/portfolio/static/media/Daniel.bf16b3387d189ef4edfc.jpg",
+    "static/media/gallery-img-3.png": "/portfolio/static/media/gallery-img-3.69853330d6a6f970c383.png",
+    "static/media/gallery-img-1.png": "/portfolio/static/media/gallery-img-1.6a33d72dd3bfb420a2e9.png",
+    "static/media/gallery-img-2.png": "/portfolio/static/media/gallery-img-2.b8e656620c716d720f69.png",
+    "index.html": "/portfolio/index.html",
+    "main.1ebf2932.css.map": "/portfolio/static/css/main.1ebf2932.css.map",
+    "main.a61b690d.js.map": "/portfolio/static/js/main.a61b690d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ebf2932.css",
+    "static/js/main.a61b690d.js"
+  ]
+}
