@@ -179,6 +179,10 @@
 }
 
 @media (max-width: 700px) {
+  .section--projects__gallery--project-img {
+    object-fit: contain;
+  }
+
   .section--projects__gallery--project-name {
     font-size: 1.6rem;
     margin: 4.5rem 0;

@@ -88,8 +88,8 @@ function Header() {
           </Button>
           <Tabs
             // Makes tabs scrollable, will be removed when this is re-factored into a hamburger menu
-            scrollButtons="true"
-            allowScrollButtonsMobile="true"
+            scrollButtons
+            allowScrollButtonsMobile
             variant="scrollable"
             visibleScrollbar
             className={classes.tabContainer}
