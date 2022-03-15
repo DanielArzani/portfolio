@@ -87,6 +87,7 @@ function Header() {
             Daniel Arzanipour
           </Button>
           <Tabs
+            // Makes tabs scrollable, will be removed when this is re-factored into a hamburger menu
             scrollButtons="true"
             allowScrollButtonsMobile="true"
             variant="scrollable"
