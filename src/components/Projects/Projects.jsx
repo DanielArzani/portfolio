@@ -37,11 +37,12 @@ function Projects() {
         "A tech blog that uses Node.js, sequelize (an ORM for sql) and session storage for data persistance",
     },
     {
-      img: require("../../assets/screenshots/gallery-img-1.png"),
+      img: require("../../assets/screenshots/gallery-img-4.png"),
       alt: "4",
       url: "https://github.com/DanielArzani/deep-thoughts",
-      title: "Project 4",
-      description: "Daniel Arzanipour",
+      title: "M.Impossible",
+      description:
+        "A charity site built using Performant JS, a NoSQL database, service workers, we also used Apollo GraphQL, JWT for Authentication.",
     },
     {
       img: require("../../assets/screenshots/gallery-img-2.png"),
