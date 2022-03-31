@@ -93,5 +93,3 @@ object-assign
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-
-//! I wasn't able to apply some critical styles for this to work, thus I decided just to do this component without MUI, in the future I will find out what went wrong (when I get more experience with this)
