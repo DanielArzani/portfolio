@@ -8,7 +8,7 @@ Sorry if this is short, I've written so many About Me's for my resume, linkedIn,
 
 I'm always looking for new technologies to learn and considering how much effort I had to put in to understand the theory and application of so many of them in such a short time frame, I don't mind learning new ones for a job too!
 
-Please look over my portfolio and don't hesitate to contact me
+Please look over my portfolio by clicking on the link below and don't hesitate to contact me
 
 How to reach me: 647-465-6149 || daniel.arzanipour@gmail.com
 
