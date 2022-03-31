@@ -1,6 +1,6 @@
 import React from "react";
-import { GitHub, LinkedIn, Translate } from "@mui/icons-material";
-import { Box, useTheme } from "@mui/material";
+import { GitHub, LinkedIn } from "@mui/icons-material";
+import { Box } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
 function Footer() {
@@ -14,7 +14,6 @@ function Footer() {
   /**-------------------------
    **        STYLES
    *------------------------**/
-  const theme = useTheme();
   const useStyles = makeStyles((theme) => ({
     footer: {
       display: "flex",

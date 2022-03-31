@@ -4,24 +4,14 @@ import {
   CardContent,
   CardMedia,
   Container,
-  useMediaQuery,
-  useTheme,
   Typography,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
 function About() {
-  function lorem() {
-    const intro = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
-    odit voluptatum nam pariatur officiis cumque amet, veniam cum
-    officia eum quia voluptatem minus molestias sit sunt quis delectus
-   `;
-    return intro;
-  }
   /**-------------------------
    **        Hooks
    *------------------------**/
-  const matches = useMediaQuery("max-width: 1040px");
   /**-------------------------
    **        STYLES
    *------------------------**/

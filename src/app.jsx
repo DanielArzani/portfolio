@@ -10,16 +10,11 @@ import {
   Footer,
   About,
   Projects,
-  ProjectCard,
   Resume,
   Contact,
 } from "./components/component-index.js";
 
 function App() {
-  function TestDiv2(props) {
-    return <div>{props.text}</div>;
-  }
-
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>

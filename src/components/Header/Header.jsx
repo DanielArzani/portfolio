@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Button, useTheme, Tab, Tabs, Toolbar } from "@mui/material";
+import { AppBar, Button, Tab, Tabs, Toolbar } from "@mui/material";
 import {
   AccountCircle,
   Article,
@@ -37,7 +37,6 @@ function Header() {
   /**-------------------------
    **        STYLES
    *------------------------**/
-  const theme = useTheme();
   const useStyles = makeStyles((theme) => ({
     appBar: {
       "&.MuiAppBar-root": {
@@ -51,7 +50,6 @@ function Header() {
     },
     toolbarMargin: {
       ...theme.mixins.toolbar,
-      // marginBottom: "5rem",
     },
     headerTitleStyles: {
       color: theme.palette.primary,
