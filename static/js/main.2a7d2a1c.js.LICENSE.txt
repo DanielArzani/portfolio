@@ -95,5 +95,3 @@ object-assign
  */
 
 //! I wasn't able to apply some critical styles for this to work, thus I decided just to do this component without MUI, in the future I will find out what went wrong (when I get more experience with this)
-
-//! Placeholder, will be replaced with an actual resume later (after i've created it)
