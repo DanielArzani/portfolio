@@ -30,7 +30,7 @@ function ProjectCard({ img, alt, url, title, description, maxWidth }) {
             target={"_blank"}
             rel="no_referrer"
           >
-            <GitHub />
+            <GitHub fontSize="large" />
           </Link>
         </IconButton>
       </CardActions>

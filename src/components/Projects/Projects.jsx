@@ -38,27 +38,27 @@ function Projects() {
     },
     {
       img: require("../../assets/screenshots/gallery-img-4.png"),
-      alt: "4",
+      alt: "charity site",
       url: "https://github.com/Fabscg/group-3-project",
       title: "Mission Impossible",
       description:
-        "A charity site built using Performant JS, a NoSQL database, service workers, we also used Apollo GraphQL, JWT for Authentication.",
+        "A charity site and PWA built using Performant JS, a NoSQL database (MongoDB), service workers for offline integration, Apollo GraphQL, and JWT's (JSON Web Token) for Authentication.",
     },
     {
-      img: require("../../assets/screenshots/gallery-img-2.png"),
-      alt: "5",
-      url: "https://github.com/DanielArzani/deep-thoughts",
-      title: "Project 5",
+      img: require("../../assets/screenshots/gallery-img-5.png"),
+      alt: "online zoo catalog",
+      url: "https://github.com/DanielArzani/zookeepr",
+      title: "Zookeepr",
       description:
-        "A progressive Web App (PWA) that uses service workers, indexedDB and MongoDB for offline data persistance",
+        "An online catalog for a zoo in which you can add your own animals and zoo keepers,a static site built using Nodejs and express with all data stored on the client its self ",
     },
     {
-      img: require("../../assets/screenshots/gallery-img-3.png"),
-      alt: "6",
-      url: "https://github.com/DanielArzani/deep-thoughts",
-      title: "Project 6",
+      img: require("../../assets/screenshots/gallery-img-6.png"),
+      alt: "food festival site",
+      url: "https://github.com/DanielArzani/food-festival",
+      title: "Food Festival",
       description:
-        "A tech blog that uses Node.js, sequelize (an ORM for sql) and session storage for data persistance",
+        "An existing site which has been turned into a PWA which can function without internet connectivity and has been optimized using webpack to increase performance and efficiency",
     },
   ];
 
@@ -98,7 +98,7 @@ function Projects() {
           })}
         </Box>
       )}
-      {/* If screen size = 1046px return this */}
+      {/* If screen size = 1312px return this */}
       {matches && (
         <Box
           sx={{
