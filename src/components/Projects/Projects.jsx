@@ -1,12 +1,12 @@
 import React from "react";
-// import { Box, Container, Link } from "@mui/material";
+import { Box, Container, useMediaQuery } from "@mui/material";
 // import { makeStyles } from "@mui/styles";
+
+import { ProjectCard } from "./ProjectCard";
 
 import "../../styles/projects.css";
 
 function Projects() {
-  //! I wasn't able to apply some critical styles for this to work, thus I decided just to do this component without MUI, in the future I will find out what went wrong (when I get more experience with this)
-
   /**-------------------------
    **         DATA
    *------------------------**/
@@ -39,8 +39,8 @@ function Projects() {
     {
       img: require("../../assets/screenshots/gallery-img-4.png"),
       alt: "4",
-      url: "https://github.com/DanielArzani/deep-thoughts",
-      title: "M.Impossible",
+      url: "https://github.com/Fabscg/group-3-project",
+      title: "Mission Impossible",
       description:
         "A charity site built using Performant JS, a NoSQL database, service workers, we also used Apollo GraphQL, JWT for Authentication.",
     },
@@ -49,94 +49,82 @@ function Projects() {
       alt: "5",
       url: "https://github.com/DanielArzani/deep-thoughts",
       title: "Project 5",
-      description: "Daniel Arzanipour",
+      description:
+        "A progressive Web App (PWA) that uses service workers, indexedDB and MongoDB for offline data persistance",
     },
     {
       img: require("../../assets/screenshots/gallery-img-3.png"),
       alt: "6",
       url: "https://github.com/DanielArzani/deep-thoughts",
       title: "Project 6",
-      description: "Daniel Arzanipour",
+      description:
+        "A tech blog that uses Node.js, sequelize (an ORM for sql) and session storage for data persistance",
     },
   ];
 
   /**-------------------------
    **       STYLES
    *------------------------**/
-  // const useStyles = makeStyles((theme) => ({
-  //   container: {
-  //     "&.MuiContainer-root": {
-  //     },
-  //   },
-  //   box: {},
-  //   link: {
-  //     "&.MuiLink-root": {},
-  //   },
-  //   img: {
-  //   },
-  //   title: {},
-  //   description: {},
-  // }));
-  // const classes = useStyles();
+  const matches = useMediaQuery("(max-width:1312px)");
 
   /**-------------------------
    **       HELPERS
    *------------------------**/
   // create random id
   const UUID = (length = 6) => Math.random().toString(20).substr(2, length);
-
   return (
-    <section className="section--projects">
-      <div className="section--projects__gallery">
-        {projectData.map((project) => {
-          return (
-            <a
-              key={UUID()}
-              className="section--projects__gallery--gallery-link"
-              href={project.url}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                className="section--projects__gallery--project-img"
-                src={project.img}
-                alt={project.alt}
+    <Container maxWidth="false" sx={{ maxWidth: "93.75rem" }}>
+      {!matches && (
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "3rem",
+            justifyContent: "space-between",
+          }}
+        >
+          {projectData.map(({ img, alt, url, title, description }) => {
+            return (
+              <ProjectCard
+                maxWidth="400px"
+                key={UUID()}
+                img={img}
+                alt={alt}
+                url={url}
+                title={title}
+                description={description}
               />
-              <h3 className="section--projects__gallery--project-name">
-                {project.title}
-              </h3>
-              <p className="section--projects__gallery--project-description">
-                {project.description}
-              </p>
-            </a>
-          );
-        })}
-      </div>
-    </section>
+            );
+          })}
+        </Box>
+      )}
+      {/* If screen size = 1046px return this */}
+      {matches && (
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "3rem",
+            alignItems: "center",
+          }}
+        >
+          {projectData.map(({ img, alt, url, title, description }) => {
+            return (
+              <ProjectCard
+                maxWidth="500px"
+                key={UUID()}
+                img={img}
+                alt={alt}
+                url={url}
+                title={title}
+                description={description}
+              />
+            );
+          })}
+        </Box>
+      )}
+    </Container>
   );
 }
 
-export default Projects;
-
-//  <Container maxWidth="lg" className={classes.container}>
-// {projectData.map((project) => {
-//   return (
-//     <Box className={classes.box} key={UUID()}>
-//       <Link
-//         className={classes.link}
-//         href={project.url}
-//         target="_blank"
-//         rel="no-referrer"
-//       >
-//         <img
-//           className={classes.img}
-//           src={project.img}
-//           alt={project.alt}
-//         />
-//         <h3 className={classes.title}>{project.title}</h3>
-//         <p className={classes.description}>{project.description}</p>
-//       </Link>
-//     </Box>
-//   );
-// })}
-// </Container>
+export { Projects };

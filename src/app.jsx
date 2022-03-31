@@ -10,6 +10,7 @@ import {
   Footer,
   About,
   Projects,
+  ProjectCard,
   Resume,
   Contact,
 } from "./components/component-index.js";
