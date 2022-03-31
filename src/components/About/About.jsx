@@ -28,10 +28,15 @@ function About() {
   const useStyles = makeStyles((theme) => ({
     container: {
       "&.MuiContainer-root": {
+        display: "flex",
+
         width: "1000px",
         [theme.breakpoints.down("aboutPage")]: {
           width: "100%",
         },
+      },
+      "&.MuiPaper-root": {
+        borderRadius: "20px",
       },
     },
     card: {
@@ -57,7 +62,11 @@ function About() {
     },
 
     cardMedia: {
-      borderRadius: "20px",
+      borderRadius: "1.25rem",
+      height: "500px",
+      "&.MuiCardMedia-root": {
+        minWidth: "18.75rem",
+      },
       [theme.breakpoints.down("aboutPage")]: {
         height: "300px",
       },
@@ -82,7 +91,15 @@ function About() {
               paragraph
               className={classes.cardContent}
             >
-              {lorem()}
+              Born in and currently living in Toronto, I started coding in early
+              september 2021, and after starting, I spent everyday, all day,
+              either going through courses on Udemy, reading up on
+              documentation, watching coding related youtube videos or just
+              coding. It was up to the point where it occupied my thoughts even
+              when I wasn't coding, after a few months, I was able to stop this
+              kind of lifestyle. Now, I still spend a lot of my time with coding
+              related things but I take breaks now and I don't touch my computer
+              at all on sundays.
             </Typography>
           </CardContent>
           <CardMedia

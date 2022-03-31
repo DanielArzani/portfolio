@@ -41,7 +41,7 @@ function Footer() {
         <LinkedIn
           className={classes.footerIcons}
           onClick={() => {
-            handleChange("https://www.linkedin.com/");
+            handleChange("https://www.linkedin.com/in/daniel-arzanipour");
           }}
         />
         <GitHub
