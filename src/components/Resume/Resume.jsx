@@ -1,6 +1,6 @@
 import React from "react";
-
 import "../../styles/resume.css";
+//^ Remember for live hosted version, its better to have a link to my github
 function Resume() {
   return (
     <iframe
