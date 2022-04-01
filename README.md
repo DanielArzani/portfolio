@@ -14,7 +14,7 @@ How to reach me: 647-465-6149 || daniel.arzanipour@gmail.com
 
 ## URL
 
-Link to [Github Pages](https://danielarzani.github.io/portfolio/)
+Click [here](https://daniel-arzani-portfolio.herokuapp.com/resume) to view my portfolio
 
 ## Education
 
