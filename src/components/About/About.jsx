@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 import {
   Card,
   CardContent,
   CardMedia,
   Container,
   Typography,
-} from "@mui/material";
-import { makeStyles } from "@mui/styles";
+} from '@mui/material';
+import { makeStyles } from '@mui/styles';
 
 function About() {
   /**-------------------------
@@ -17,67 +17,67 @@ function About() {
    *------------------------**/
   const useStyles = makeStyles((theme) => ({
     container: {
-      "&.MuiContainer-root": {
-        display: "flex",
+      '&.MuiContainer-root': {
+        display: 'flex',
 
-        width: "1000px",
-        [theme.breakpoints.down("aboutPage")]: {
-          width: "100%",
+        width: '1000px',
+        [theme.breakpoints.down('aboutPage')]: {
+          width: '100%',
         },
       },
-      "&.MuiPaper-root": {
-        borderRadius: "20px",
+      '&.MuiPaper-root': {
+        borderRadius: '20px',
       },
     },
     card: {
-      display: "flex",
-      alignItems: "flex-start",
-      maxHeight: "60rem",
+      display: 'flex',
+      alignItems: 'flex-start',
+      maxHeight: '60rem',
       // maxWidth: "1400px",
-      [theme.breakpoints.down("aboutPage")]: {
-        flexDirection: "column-reverse",
+      [theme.breakpoints.down('aboutPage')]: {
+        flexDirection: 'column-reverse',
       },
     },
     cardContent: {
-      "&.MuiTypography-h5": {
-        fontSize: "1.8rem",
+      '&.MuiTypography-h5': {
+        fontSize: '1.8rem',
         fontWeight: 500,
       },
 
-      "&.MuiTypography-subtitle1": {
+      '&.MuiTypography-subtitle1': {
         color: theme.palette.common.gray,
-        fontSize: "1.5rem",
-        lineHeight: "1.4",
+        fontSize: '1.5rem',
+        lineHeight: '1.4',
       },
     },
 
     cardMedia: {
-      borderRadius: "1.25rem",
-      height: "500px",
-      "&.MuiCardMedia-root": {
-        minWidth: "18.75rem",
+      borderRadius: '1.25rem',
+      height: '500px',
+      '&.MuiCardMedia-root': {
+        minWidth: '18.75rem',
       },
-      [theme.breakpoints.down("aboutPage")]: {
-        height: "300px",
+      [theme.breakpoints.down('aboutPage')]: {
+        height: '300px',
       },
     },
   }));
   const classes = useStyles();
   return (
     <>
-      <Container maxWidth="md" className={classes.container}>
+      <Container maxWidth='md' className={classes.container}>
         <Card className={classes.card}>
           <CardContent className={classes.cardContent}>
             <Typography
               gutterBottom
-              variant="h5"
-              component="h5"
+              variant='h5'
+              component='h5'
               className={classes.cardContent}
             >
               Hi, I'm Daniel, a FullStack Developer
             </Typography>
             <Typography
-              variant="subtitle1"
+              variant='subtitle1'
               paragraph
               className={classes.cardContent}
             >
@@ -94,10 +94,10 @@ function About() {
           </CardContent>
           <CardMedia
             className={classes.cardMedia}
-            component="img"
-            alt="Daniel Arzanipour"
-            height="400"
-            image={require("../../assets/photos/Daniel.jpg")}
+            component='img'
+            alt='Daniel Arzanipour'
+            height='400'
+            image={require('../../assets/photos/daniel.jpeg')}
           ></CardMedia>
         </Card>
       </Container>
