@@ -9,7 +9,7 @@ function Contact() {
       </Typography>
       <Box
         component={'form'}
-        action='/5951e52cb8a41b15aaa20ab4c48c7d1f'
+        action='http://daniel-arzani-portfolio.herokuapp.com/'
         method='POST'
         sx={{
           display: 'flex',
