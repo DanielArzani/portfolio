@@ -40,7 +40,7 @@ function Projects() {
       img: require('../../assets/screenshots/gallery-img-4.png'),
       alt: 'charity site',
       url: 'https://github.com/Fabscg/group-3-project',
-      title: 'Mission Impossible',
+      title: 'Mission Possible',
       description:
         "A charity site and PWA built using Performant JS, a NoSQL database (MongoDB), service workers for offline integration, Apollo GraphQL, and JWT's for Authentication and stripe for payment processing",
     },
