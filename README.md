@@ -6,7 +6,7 @@ My name is Daniel Arzanipour and I've always liked technology (_the software par
 
 Sorry if this is short, I've written so many About Me's for my resume, linkedIn, my github profile, my portfolio itself and now another one for this readme!
 
-I'm always looking for new technologies to learn and considering how much effort I had to put in to understand the theory and application of so many of them in such a short time frame, I don't mind learning new ones for a job too!
+I'm always looking for new technologies to learn and considering how much effort I had to put in to understand the theory and application of so many of them in such a short time frame, now I'm always looking for new technologies, styles theories to improve my way of doing things
 
 Please look over my portfolio by clicking on the link below and don't hesitate to contact me
 
