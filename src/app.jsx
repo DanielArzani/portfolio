@@ -12,6 +12,7 @@ import {
   Projects,
   Resume,
   Contact,
+  ThankYou,
 } from './components/component-index.js';
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
           <Route path="/resume" element={<Resume/>}></Route>
           {/* prettier-ignore */}
           <Route path="/contact" element={<Contact/>}></Route>
+          {/* prettier-ignore */}
+          <Route path="/ThankYou" element={<ThankYou/>}></Route>
           {/* Default */}
           {/* prettier-ignore */}
           {/* <Route path="*" element={<About/>}></Route> */}
