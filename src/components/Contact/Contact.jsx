@@ -9,9 +9,10 @@ function Contact() {
       </Typography>
       <Box
         component={'form'}
-        method='POST'
+        method='post'
         data-netlify='true'
         name='contact'
+        onSubmit='submit'
         sx={{
           display: 'flex',
           alignItems: 'flex-start',
@@ -21,6 +22,7 @@ function Contact() {
           maxWidth: '30rem',
         }}
       >
+        <input type='hidden' name='form-name' value='contact' />
         <TextField
           name='name'
           id='name'
