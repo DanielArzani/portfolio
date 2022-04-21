@@ -9,7 +9,8 @@ function Contact() {
       </Typography>
       <Box
         component={'form'}
-        netlify
+        method='POST'
+        data-netlify='true'
         name='contact'
         sx={{
           display: 'flex',
