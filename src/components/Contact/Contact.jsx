@@ -2,6 +2,10 @@ import React from 'react';
 import { Box, Button, Container, TextField, Typography } from '@mui/material';
 
 function Contact() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <Container sx={{ padding: '0 5rem' }}>
       <Typography component='h3' variant='h3'>
@@ -13,7 +17,7 @@ function Contact() {
         action='./ThankYou.jsx'
         data-netlify='true'
         name='contact'
-        onSubmit='submit'
+        onSubmit={handleSubmit}
         sx={{
           display: 'flex',
           alignItems: 'flex-start',
