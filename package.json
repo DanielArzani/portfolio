@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "homepage": "https://daniel-arzani-portfolio.herokuapp.com/",
+  "homepage": "https://daniel-arzani-portfolio.netlify.app/",
   "name": "portfolio",
   "private": true,
   "dependencies": {

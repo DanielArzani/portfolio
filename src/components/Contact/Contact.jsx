@@ -9,8 +9,8 @@ function Contact() {
       </Typography>
       <Box
         component={'form'}
-        action='http://daniel-arzani-portfolio.herokuapp.com/'
-        method='POST'
+        netlify
+        name='contact'
         sx={{
           display: 'flex',
           alignItems: 'flex-start',
