@@ -1,9 +1,9 @@
-import React from "react";
-import { ThemeProvider } from "@mui/material/styles";
-import { BrowserRouter, Route, Routes as Switch } from "react-router-dom";
+import React from 'react';
+import { ThemeProvider } from '@mui/material/styles';
+import { BrowserRouter, Route, Routes as Switch } from 'react-router-dom';
 
-import "./styles/app.css";
-import theme from "./themes/theme.js";
+import './styles/app.css';
+import theme from './themes/theme.js';
 
 import {
   Header,
@@ -12,7 +12,7 @@ import {
   Projects,
   Resume,
   Contact,
-} from "./components/component-index.js";
+} from './components/component-index.js';
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
           <Route path="/contact" element={<Contact/>}></Route>
           {/* Default */}
           {/* prettier-ignore */}
-          <Route path="*" element={<About/>}></Route>
+          {/* <Route path="*" element={<About/>}></Route> */}
         </Switch>
         <Footer />
       </BrowserRouter>
