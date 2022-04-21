@@ -10,6 +10,7 @@ function Contact() {
       <Box
         component={'form'}
         method='post'
+        action='./ThankYou.jsx'
         data-netlify='true'
         name='contact'
         onSubmit='submit'
