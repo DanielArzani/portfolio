@@ -4,8 +4,6 @@
 
 My name is Daniel Arzanipour and I've always liked technology (_the software part of it_) and have been interested in its design and creation, an opportunity had presented itself and I decided to give this passion of mine a shot
 
-Sorry if this is short, I've written so many About Me's for my resume, linkedIn, my github profile, my portfolio itself and now another one for this readme!
-
 I'm always looking for new technologies to learn and considering how much effort I had to put in to understand the theory and application of so many of them in such a short time frame, now I'm always looking for new technologies, styles theories to improve my way of doing things
 
 Please look over my portfolio by clicking on the link below and don't hesitate to contact me
